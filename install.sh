@@ -21,6 +21,8 @@ sudo add-apt-repository \
 sudo apt-get update
 sudo apt-get install -y docker-ce
 
+#To run docker commands without sudo, run the command; sudo usermod -aG docker $USER. log out and login again, then you will run docker commands without sudo. 
+
 # Install Kubernetes
 sudo apt-get update && sudo apt-get install -y apt-transport-https curl
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
